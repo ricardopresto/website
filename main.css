@@ -12,3 +12,56 @@ html {
 body {
   height: 100%;
 }
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3rem repeat(3, 1fr);
+}
+
+#header {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  grid-area: 1/1/2/5;
+}
+
+#header div {
+  padding: 1rem 4rem 0 4rem;
+  color: darkslategray;
+}
+
+#header div:hover {
+  color: white;
+}
+
+#clockContainer {
+  grid-area: 2/1/4/2;
+}
+
+#main {
+  border: 1px solid red;
+  grid-area: 2/2 / auto/5;
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    flex-direction: column;
+    grid-area: 1/2/2/5;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  #clockContainer {
+    grid-area: 1/1 / auto/auto;
+  }
+
+  #grid {
+    grid-template-rows: 10rem repeat(3, 1fr);
+  }
+
+  #main {
+    grid-area: 2/1 / auto/5;
+  }
+}
