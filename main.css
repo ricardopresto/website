@@ -33,6 +33,7 @@ body {
 
 #header div:hover {
   color: white;
+  cursor: default;
 }
 
 #clockContainer {
@@ -62,4 +63,8 @@ body {
   #main {
     grid-area: 2/1 / auto/5;
   }
+}
+
+#arse {
+  color: red;
 }

@@ -18,6 +18,12 @@ body {
   height: 100%;
 }
 
+a {
+  color: #fff;
+  cursor: default;
+  float: left;
+}
+
 #input,
 #output,
 #container {

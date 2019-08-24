@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+a {
+  color: #000;
+  position: absolute;
+  cursor: default;
+}
+
 .thumb {
   margin: 20px;
   padding: 20px;

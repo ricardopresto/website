@@ -5,15 +5,18 @@
   font-family: "Quicksand", sans-serif;
 }
 
-/* div {
-  border: 1px solid red;
-} */
-
 #container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: #000;
+  position: absolute;
+  padding: 5px;
+  cursor: default;
 }
 
 #guide {
