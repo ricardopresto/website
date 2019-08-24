@@ -1,0 +1,72 @@
+#wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+  transition: all;
+  transition-duration: 80ms;
+}
+
+.thumb:hover {
+  position: relative;
+  transform: scale(1.008, 1.008);
+  box-shadow: 1px 1px 10px grey;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#picAndCaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#fullpic {
+  display: block;
+  padding: 30px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+#caption {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 10px;
+}
+
+.cheeks {
+  display: flex;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#picContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.cheeks:hover {
+  opacity: 0.4;
+}

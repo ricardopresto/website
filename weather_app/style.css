@@ -1,0 +1,142 @@
+* {
+  font-family: "Prompt", sans-serif;
+  white-space: nowrap;
+}
+
+html {
+  background-image: url("./sky.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+}
+
+#input,
+#output,
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#output {
+  border: 1px solid darkslategray;
+  padding: 1rem;
+  margin: 1rem;
+  visibility: hidden;
+  box-shadow: 1px 1px 30px white;
+}
+
+#search {
+  color: black;
+  width: 6rem;
+  padding: 6px;
+  margin: 1rem;
+  background-color: transparent;
+  border: 1px solid darkslategray;
+  -webkit-transition: 0.2s;
+  transition: box-shadow 0.2s;
+}
+
+#search:hover {
+  box-shadow: 1px 1px 30px white;
+}
+
+#cityInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#city {
+  color: black;
+  width: 20rem;
+  font-size: 1.2em;
+  margin: 1rem;
+  border: 1px solid darkslategray;
+  padding-left: 5px;
+}
+
+#countryInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#countrySelect {
+  width: 20rem;
+  margin: 1rem;
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid darkslategray;
+}
+
+label {
+  display: inline-block;
+  width: 10rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+#forecast {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  visibility: hidden;
+}
+
+.forecastDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid darkslategray;
+  padding: 1rem;
+  margin: 0 1rem 0 1rem;
+  box-shadow: 1px 1px 30px white;
+}
+
+.out {
+  padding: 5px;
+  font-family: "Prompt", sans-serif;
+  font-size: 1.5rem;
+}
+
+.temp {
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  #forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .forecastDay {
+    margin-top: 1rem;
+    width: min-content;
+  }
+
+  #cityInput {
+    flex-direction: column;
+  }
+
+  #countryInput {
+    flex-direction: column;
+  }
+
+  label {
+    width: min-content;
+  }
+}
