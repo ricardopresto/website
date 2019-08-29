@@ -15,15 +15,6 @@
   justify-content: center;
 }
 
-a {
-  display: block;
-  position: absolute;
-  background-color: #000;
-  color: #fff;
-  cursor: default;
-  padding: 5px;
-}
-
 #buttons {
   display: flex;
   flex-direction: column;
