@@ -20,8 +20,13 @@ body {
 
 a {
   color: #fff;
+  position: absolute;
+  padding: 10px;
   cursor: default;
-  float: left;
+}
+
+a:hover {
+  transform: scale(1.1, 1.1);
 }
 
 #input,
