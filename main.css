@@ -40,27 +40,6 @@ html {
   grid-area: 2/2 / auto/5;
 }
 
-@media screen and (max-width: 480px) {
-  #header {
-    flex-direction: column;
-    grid-area: 1/2/2/5;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-
-  #clockContainer {
-    grid-area: 1/1 / auto/auto;
-  }
-
-  #grid {
-    grid-template-rows: 10rem repeat(3, 1fr);
-  }
-
-  #main {
-    grid-area: 2/1 / auto/5;
-  }
-}
-
 #projectContainer {
   display: flex;
   flex-flow: row wrap;
@@ -97,17 +76,20 @@ html {
 
 .description {
   text-align: center;
-  margin: 20px;
+  margin: 30px 0 10px 0;
   color: darkslategray;
 }
 
 #contactDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 200px;
-  margin-top: 50px;
-  justify-content: space-evenly;
+  text-align: center;
+}
+
+#contactDetails h2:first-child {
+  margin-top: 6em;
+}
+
+#contactDetails h2 {
+  margin: 2em;
 }
 
 #emailLink {
@@ -122,4 +104,39 @@ html {
 
 #phoneNumber {
   color: darkslategray;
+}
+
+#aboutContainer {
+  text-align: center;
+  color: darkslategray;
+  font-size: 1.2em;
+}
+
+#aboutContainer div:first-child {
+  margin-top: 6em;
+}
+
+#aboutContainer div {
+  margin: 2em;
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    flex-direction: column;
+    grid-area: 1/2/2/5;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  #clockContainer {
+    grid-area: 1/1 / auto/auto;
+  }
+
+  #grid {
+    grid-template-rows: 10rem repeat(3, 1fr);
+  }
+
+  #main {
+    grid-area: 2/1 / auto/5;
+  }
 }
