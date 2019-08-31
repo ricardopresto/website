@@ -5,7 +5,7 @@ const aboutPage = () => {
   about about about about about about about about about about 
   about about about about about about about about about about 
   about about about about about about about about about about 
-  about about </div>`;
+  </div>`;
 
   about.style.color = "#fff";
   projects.style.color = "darkslategray";
