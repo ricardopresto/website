@@ -4,9 +4,9 @@ const main = document.getElementById("main");
 const about = document.getElementById("about");
 const projects = document.getElementById("projects");
 const contact = document.getElementById("contact");
-let activePage = "about";
+let activePage = "project";
 
-aboutPage();
+projectsPage();
 
 const aboutPageClick = () => {
   activePage = "about";

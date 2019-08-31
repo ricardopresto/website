@@ -1,7 +1,11 @@
 const aboutPage = () => {
-  main.innerHTML = `<h1 id="arse">Arseface</h1>
-  <div>hello hello hello hello hello hello hello hello hello hello hello hello hello hello 
-  hello hello hello hello hello hello hello hello hello hello hello hello hello hello</div>`;
+  main.innerHTML = `<h1 id="arse">About</h1>
+  <div>about about about about about about about about about 
+  about about about about about about about about about about 
+  about about about about about about about about about about 
+  about about about about about about about about about about 
+  about about about about about about about about about about 
+  about about </div>`;
 
   about.style.color = "#fff";
   projects.style.color = "darkslategray";
@@ -44,7 +48,7 @@ const projectsPage = () => {
     <div id="galleryApp" class="projectBox">
       <img src="./images/gallery.jpg" />
       <div class="description">
-      A simple image gallery app
+      A simple image gallery
       </div>
       <div class="linksBox">
         <a href="./gallery/index.html" target="_blank" >Webpage</a>
@@ -59,7 +63,11 @@ const projectsPage = () => {
 };
 
 const contactPage = () => {
-  main.innerHTML = `<h1>GO AWAY</h1>`;
+  main.innerHTML = `
+  <div id="contactDetails">
+    <h2><a id="emailLink" href="mailto:ricardopresto5@gmail.com">ricardopresto5@gmail.com</a></h2>
+    <h2 id="phoneNumber">06854 26290</h2>
+  </div>`;
 
   about.style.color = "darkslategray";
   projects.style.color = "darkslategray";

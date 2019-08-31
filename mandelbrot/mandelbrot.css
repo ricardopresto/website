@@ -12,17 +12,6 @@
   align-items: center;
 }
 
-a {
-  color: #000;
-  position: absolute;
-  padding: 10px;
-  cursor: default;
-}
-
-a:hover {
-  transform: scale(1.1, 1.1);
-}
-
 #guide {
   position: absolute;
   z-index: 2;

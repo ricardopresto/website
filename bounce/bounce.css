@@ -19,18 +19,6 @@ body {
   align-items: center;
 }
 
-a {
-  color: #fff;
-  background-color: #000;
-  position: absolute;
-  margin: 5px;
-  cursor: default;
-}
-
-a:hover {
-  transform: scale(1.1, 1.1);
-}
-
 #buttons {
   display: flex;
   flex-direction: column;

@@ -100,3 +100,26 @@ html {
   margin: 20px;
   color: darkslategray;
 }
+
+#contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+#emailLink {
+  text-decoration: none;
+  color: darkslategray;
+  cursor: default;
+}
+
+#emailLink:hover {
+  color: #fff;
+}
+
+#phoneNumber {
+  color: darkslategray;
+}
