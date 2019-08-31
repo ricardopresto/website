@@ -6,10 +6,31 @@ const aboutPage = () => {
 };
 
 const projectsPage = () => {
-  main.innerHTML = `<a href="./weather_app/index.html" >Weather</a>
-  <a href="./mandelbrot/index.html" >Mandelbrot</a>
-  <a href="./bounce/index.html" >Bounce</a>
-  <a href="./gallery/index.html" >Gallery</a>`;
+  main.innerHTML = `
+  <div id="projectContainer">
+  
+    <div id="weatherApp" class="projectBox">
+    <img src="weather.jpg" />
+    <a href="./weather_app/index.html" >Weather</a>
+    </div>
+
+    <div id="mandelbrotApp" class="projectBox">
+    <img src="mandelbrot.jpg" />
+    <a href="./mandelbrot/index.html" >Mandelbrot</a>
+    </div> 
+
+    <div id="bounceApp" class="projectBox">
+    <img src="bounce.jpg" />
+    <a href="./bounce/index.html" >Bounce</a>
+    </div>
+
+    <div id="galleryApp" class="projectBox">
+    <img src="gallery.jpg" />
+    <a href="./gallery/index.html" >Gallery</a>
+    </div> 
+
+  </div>
+  `;
 };
 
 const contactPage = () => {

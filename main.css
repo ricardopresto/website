@@ -65,6 +65,20 @@ body {
   }
 }
 
-#arse {
-  color: red;
+#projectContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20px;
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  min-width: 300px;
+  height: 300px;
+  margin: 20px;
+
+  border: 1px solid red;
 }
