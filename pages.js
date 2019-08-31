@@ -22,7 +22,7 @@ const projectsPage = () => {
   main.innerHTML = `
   <div id="projectContainer">
     <div id="weatherApp" class="projectBox">
-      <img src="./images/weather.jpg" />
+      <a href="./weather_app/index.html" target="_blank" ><img src="./images/weather.jpg" /></a>
       <div class="description">
       A front-end for the OpenWeatherMap API
       </div>
@@ -32,7 +32,7 @@ const projectsPage = () => {
       </div>
     </div>
     <div id="mandelbrotApp" class="projectBox">
-      <img src="./images/mandelbrot.jpg" />
+      <a href="./mandelbrot/index.html" target="_blank" ><img src="./images/mandelbrot.jpg" /></a>
       <div class="description">
       A Mandelbrot Set generator
       </div>
@@ -42,7 +42,7 @@ const projectsPage = () => {
       </div>
     </div> 
     <div id="bounceApp" class="projectBox">
-      <img src="./images/bounce.jpg" />
+      <a href="./bounce/index.html" target="_blank" ><img src="./images/bounce.jpg" /></a>
       <div class="description">
       A traditional old-school Breakout game
       </div>
@@ -52,7 +52,7 @@ const projectsPage = () => {
       </div>
     </div>
     <div id="galleryApp" class="projectBox">
-      <img src="./images/gallery.jpg" />
+      <a href="./gallery/index.html" target="_blank" ><img src="./images/gallery.jpg" /></a>
       <div class="description">
       A simple image gallery
       </div>
