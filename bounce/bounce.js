@@ -10,7 +10,9 @@ const c1 = document.getElementById("canvas1"),
   buttons = document.getElementById("buttons"),
   soundBtn = document.getElementById("sound"),
   startbtn = document.getElementById("start"),
-  soundIcon = document.getElementById("soundIcon");
+  soundIcon = document.getElementById("soundIcon"),
+  homeButton = document.getElementById("homeButton"),
+  surround = document.getElementById("surround");
 
 soundBtn.addEventListener("click", soundBtnClick);
 startbtn.addEventListener("click", startBtnClick);
@@ -34,8 +36,14 @@ const setSize = () => {
 
   if (window.innerWidth < size + 140) {
     buttons.style.flexDirection = "row";
+    homeButton.style.position = "static";
+    container.style.marginTop = "5px";
+    surround.style.flexFlow = "column";
   } else {
     buttons.style.flexDirection = "column";
+    homeButton.style.position = "absolute";
+    container.style.marginTop = "20px";
+    surround.style.flexFlow = "row";
   }
 };
 

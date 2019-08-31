@@ -3,23 +3,27 @@
   padding: 0;
 }
 
+body {
+  background-color: #000;
+}
+
 #surround {
   width: 100vw;
   height: 100vh;
   left: 0;
   top: 0;
-  background-color: #000;
   z-index: -1;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
+  align-items: center;
 }
 
 a {
   color: #fff;
   background-color: #000;
   position: absolute;
-  padding: 10px;
+  margin: 5px;
   cursor: default;
 }
 
