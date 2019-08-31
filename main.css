@@ -5,18 +5,14 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 3rem repeat(3, 1fr);
+  grid-template-rows: 3rem 1fr;
 }
 
 #header {
@@ -27,12 +23,12 @@ body {
 }
 
 #header div {
-  padding: 1rem 4rem 0 4rem;
+  margin: 1rem 4rem 0 4rem;
   color: darkslategray;
+  font-size: 1.3em;
 }
 
 #header div:hover {
-  color: white;
   cursor: default;
 }
 
@@ -79,6 +75,28 @@ body {
   min-width: 300px;
   height: 300px;
   margin: 20px;
+}
 
-  border: 1px solid red;
+#projectContainer a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+#projectContainer a:hover {
+  color: #fff;
+  cursor: default;
+}
+
+.linksBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.description {
+  text-align: center;
+  margin: 20px;
+  color: darkslategray;
 }
