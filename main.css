@@ -74,12 +74,11 @@ html {
 }
 
 #projectContainer img {
-  transition: all;
-  transition-duration: 80ms;
+  transition: box-shadow;
+  transition-duration: 100ms;
 }
 
 #projectContainer img:hover {
-  transform: scale(1.005, 1.005);
   box-shadow: 1px 1px 5px grey;
 }
 
