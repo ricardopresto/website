@@ -54,7 +54,7 @@ city.focus();
 
 const getWeatherData = place => {
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       place +
       "&units=metric&APPID=b9a098030deae92fa48e1b91be240011",
     { mode: "cors" }
@@ -85,7 +85,7 @@ const getWeatherData = place => {
 
 const getWeatherForecast = place => {
   fetch(
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       place +
       "&units=metric&APPID=b9a098030deae92fa48e1b91be240011",
     { mode: "cors" }
