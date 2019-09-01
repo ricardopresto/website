@@ -92,6 +92,7 @@ html {
 
 #contactDetails {
   text-align: center;
+  color: darkslategray;
 }
 
 #contactDetails h2:first-child {
@@ -104,16 +105,12 @@ html {
 
 #emailLink {
   text-decoration: none;
-  color: darkslategray;
   cursor: default;
+  color: darkslategray;
 }
 
 #emailLink:hover {
   color: #fff;
-}
-
-#phoneNumber {
-  color: darkslategray;
 }
 
 #aboutContainer {

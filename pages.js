@@ -28,7 +28,8 @@ const projectsPage = () => {
       </div>
       <div class="linksBox">
         <a href="./weather_app/index.html" target="_blank" >Webpage</a>
-        <a href="https://github.com/ricardopresto/website/tree/master/weather_app" target="_blank" >Code</a>
+        <a href="https://github.com/ricardopresto/website/tree/master/weather_app" target="_blank" >
+        <i class="fab fa-github fa-lg"></i> Code</a>
       </div>
     </div>
     <div id="mandelbrotApp" class="projectBox">
@@ -38,7 +39,8 @@ const projectsPage = () => {
       </div>
       <div class="linksBox">
         <a href="./mandelbrot/index.html" target="_blank" >Webpage</a>
-        <a href="https://github.com/ricardopresto/website/tree/master/mandelbrot" target="_blank" >Code</a>
+        <a href="https://github.com/ricardopresto/website/tree/master/mandelbrot" target="_blank" >
+        <i class="fab fa-github fa-lg"></i> Code</a>
       </div>
     </div> 
     <div id="bounceApp" class="projectBox">
@@ -48,7 +50,8 @@ const projectsPage = () => {
       </div>
       <div class="linksBox">
         <a href="./bounce/index.html" target="_blank" >Webpage</a>
-        <a href="https://github.com/ricardopresto/website/tree/master/bounce" target="_blank" >Code</a>
+        <a href="https://github.com/ricardopresto/website/tree/master/bounce" target="_blank" >
+        <i class="fab fa-github fa-lg"></i> Code</a>
       </div>
     </div>
     <div id="galleryApp" class="projectBox">
@@ -58,7 +61,8 @@ const projectsPage = () => {
       </div>
       <div class="linksBox">
         <a href="./gallery/index.html" target="_blank" >Webpage</a>
-        <a href="https://github.com/ricardopresto/website/tree/master/gallery" target="_blank" >Code</a>
+        <a href="https://github.com/ricardopresto/website/tree/master/gallery" target="_blank" >
+        <i class="fab fa-github fa-lg"></i> Code</a>
       </div>
     </div> 
   </div>`;
@@ -71,8 +75,10 @@ const projectsPage = () => {
 const contactPage = () => {
   main.innerHTML = `
   <div id="contactDetails">
-    <h2><a id="emailLink" href="mailto:ricardopresto5@gmail.com">ricardopresto5@gmail.com</a></h2>
-    <h2 id="phoneNumber">06854 26290</h2>
+    <h2><i class="fas fa-globe-europe"></i> Helmond, Noord-Brabant, NL</h2>
+    <h2><i class="far fa-envelope"></i>
+    <a id="emailLink" href="mailto:ricardopresto5@gmail.com"> ricardopresto5@gmail.com</a></h2>
+    <h2><i class="fas fa-phone"></i> 06854 26290</h2>
   </div>`;
 
   about.style.color = "darkslategray";
