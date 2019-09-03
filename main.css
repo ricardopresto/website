@@ -1,4 +1,4 @@
-/* body:before {
+body:before {
   content: "";
   display: block;
   position: fixed;
@@ -7,13 +7,12 @@
   width: 100%;
   height: 100%;
   z-index: -10;
-  background: url(./images/nosferatu_light.jpg) no-repeat center center;
+  background: url(./images/slate.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
- */
 
 * {
   margin: 0;
@@ -75,7 +74,6 @@
   min-width: 300px;
   height: min-content;
   margin: 20px;
-  background-color: #efeffe;
 }
 
 #projectContainer a {
