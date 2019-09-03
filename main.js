@@ -4,7 +4,7 @@ const main = document.getElementById("main");
 const about = document.getElementById("about");
 const projects = document.getElementById("projects");
 const contact = document.getElementById("contact");
-let activePage = "project";
+let activePage = "projects";
 
 projectsPage();
 
