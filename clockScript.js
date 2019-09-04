@@ -7,33 +7,47 @@ const ctxH = h.getContext("2d");
 const c = document.getElementById("clockFace");
 const ctxC = c.getContext("2d");
 
+let color = "darkslategray";
+
 function resize() {
   let size = document.documentElement.clientWidth / 3;
+
+  if (document.documentElement.clientWidth < 480) {
+    color = "#fff";
+    size = 160;
+  } else {
+    color = "darkslategray";
+  }
   c.style.width = `${size}px`;
   h.style.width = `${size}px`;
   m.style.width = `${size}px`;
   s.style.width = `${size}px`;
+  drawFace();
 }
 
 resize();
 
 window.onresize = resize;
 
-ctxC.beginPath();
-ctxC.strokeStyle = "darkslategray";
-ctxC.lineWidth = 4;
-ctxC.lineCap = "round";
-for (x = 0; x < 360; x = x + 30) {
-  ctxC.moveTo(
-    300 + 205 * Math.cos((Math.PI / 180) * x),
-    300 + 205 * Math.sin((Math.PI / 180) * x)
-  );
-  ctxC.lineTo(
-    300 + 210 * Math.cos((Math.PI / 180) * x),
-    300 + 210 * Math.sin((Math.PI / 180) * x)
-  );
-  ctxC.stroke();
+function drawFace() {
+  ctxC.beginPath();
+  ctxC.strokeStyle = `${color}`;
+  ctxC.lineWidth = 4;
+  ctxC.lineCap = "round";
+  for (x = 0; x < 360; x = x + 30) {
+    ctxC.moveTo(
+      300 + 205 * Math.cos((Math.PI / 180) * x),
+      300 + 205 * Math.sin((Math.PI / 180) * x)
+    );
+    ctxC.lineTo(
+      300 + 210 * Math.cos((Math.PI / 180) * x),
+      300 + 210 * Math.sin((Math.PI / 180) * x)
+    );
+    ctxC.stroke();
+  }
 }
+
+drawFace();
 
 const tick = () => {
   let date = new Date();
@@ -48,7 +62,7 @@ const tick = () => {
     300 + 10 * Math.cos((Math.PI / 180) * angleS),
     300 + 10 * Math.sin((Math.PI / 180) * angleS)
   );
-  ctxS.strokeStyle = "darkslategray";
+  ctxS.strokeStyle = `${color}`;
   ctxS.lineCap = "round";
   ctxS.lineWidth = 2;
   ctxS.shadowColor = "darkslategray";
@@ -68,7 +82,7 @@ const tick = () => {
     300 + 10 * Math.cos((Math.PI / 180) * angleM),
     300 + 10 * Math.sin((Math.PI / 180) * angleM)
   );
-  ctxM.strokeStyle = "darkslategray";
+  ctxM.strokeStyle = `${color}`;
   ctxM.lineCap = "round";
   ctxM.lineWidth = 6;
   ctxM.shadowColor = "darkslategray";
@@ -88,7 +102,7 @@ const tick = () => {
     300 + 10 * Math.cos((Math.PI / 180) * angleH),
     300 + 10 * Math.sin((Math.PI / 180) * angleH)
   );
-  ctxH.strokeStyle = "darkslategray";
+  ctxH.strokeStyle = `${color}`;
   ctxH.lineCap = "round";
   ctxH.lineWidth = 8;
   ctxH.shadowColor = "darkslategray";

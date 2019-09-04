@@ -157,10 +157,14 @@ body:before {
 @media screen and (max-width: 480px) {
   #header {
     flex-direction: column;
-    grid-area: 1/2/2/5;
     align-items: flex-end;
     justify-content: flex-start;
-    height: min-content;
+    height: 160px;
+  }
+
+  #projectContainer {
+    flex-direction: column;
+    align-content: center;
   }
 
   #clockContainer {
