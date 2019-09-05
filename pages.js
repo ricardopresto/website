@@ -45,8 +45,9 @@ vooral geweldig om problemen op te lossen.</div>
 <div id="about2">Ik ben begonnen met mijn zelfstudie web development aan het einde van 2018, met de 
 bedoeling om daar een een nieuwe carrière in te beginnen. Daarvoor was programmeren 
 alleen een hobby, die begon met de ZX Spectrum in het begin van de jaren '80.</div>
-<div id="about3">My university degree is in philosophy, and I find that the precision and logical 
-analysis that philosophy teaches is a good preparation for the process of writing software.</div>
+<div id="about3">Mijn universitaire opleiding is filosofie, en ik vind dat de precisie en logische 
+analyse vanuit de filosofie leer is een goede voorbereiding voor het proces van het 
+schrijven van software.</div>
 </div>`;
 
 const projectsPage = `
