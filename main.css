@@ -1,23 +1,11 @@
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(./images/slate.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 * {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: url(./images/slate-tiled.jpg);
 }
 
 #grid {
@@ -134,23 +122,26 @@ body:before {
   color: #fff;
 }
 
-#aboutContainer {
+.aboutContainer {
   text-align: center;
   color: darkslategray;
   font-size: 1.1em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3em;
 }
 
-#aboutContainer div {
+.aboutContainer div {
   margin: 1em;
 }
 
-#aboutContainer img {
+.aboutContainer img {
   height: 300px;
   margin-top: 20px;
+}
+
+#aboutText {
+  margin-top: 3em;
 }
 
 #skillsBox {

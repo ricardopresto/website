@@ -1,13 +1,5 @@
-const aboutPage = () => {
-  main.innerHTML = `
-  <div id="aboutContainer">
-    <div id="about1">I love the feeling that anything is possible with software, and am 
-    happiest when I have a problem to solve.</div>
-    <div id="about2">I started to teach myself web development at the end of 2018, looking for a change
-    of career. Before that, programming was just a hobby, beginning with the ZX Spectrum in 
-    the early 1980s.</div>
-    <div id="about3">My university degree is in philosophy, and I find that the precision and logical 
-    analysis that philosophy teaches is a good preparation for the process of writing software.</div>
+const aboutPage = `
+  <div class="aboutContainer">
     <div id="skillsBox">
       <div id="listBox">
         <div>Skills:</div>
@@ -35,13 +27,29 @@ const aboutPage = () => {
     </div>
   </div>`;
 
-  about.style.color = "#fff";
-  projects.style.color = "darkslategray";
-  contact.style.color = "darkslategray";
-};
+const aboutEN = `
+<div class="aboutContainer" id="aboutText">
+<div id="about1">I love the feeling that anything is possible with software, and am 
+happiest when I have a problem to solve.</div>
+<div id="about2">I started to teach myself web development at the end of 2018, looking for a change
+of career. Before that, programming was just a hobby, beginning with the ZX Spectrum in 
+the early 1980s.</div>
+<div id="about3">My university degree is in philosophy, and I find that the precision and logical 
+analysis that philosophy teaches is a good preparation for the process of writing software.</div>
+</div>`;
 
-const projectsPage = () => {
-  main.innerHTML = `
+const aboutNL = `
+<div class="aboutContainer" id="aboutText">
+<div id="about1">Het gevoel dat alles mogelijk is met software vind ik fantastisch, en ik vind het 
+vooral geweldig om problemen op te lossen.</div>
+<div id="about2">Ik ben begonnen met mijn zelfstudie web development aan het einde van 2018, met de 
+bedoeling om daar een een nieuwe carrière in te beginnen. Daarvoor was programmeren 
+alleen een hobby, die begon met de ZX Spectrum in het begin van de jaren '80.</div>
+<div id="about3">My university degree is in philosophy, and I find that the precision and logical 
+analysis that philosophy teaches is a good preparation for the process of writing software.</div>
+</div>`;
+
+const projectsPage = `
   <div id="projectContainer">
         <div id="mandelbrotApp" class="projectBox">
       <a href="./mandelbrot/index.html" target="_blank" ><img src="./images/mandelbrot.jpg" /></a>
@@ -89,13 +97,7 @@ const projectsPage = () => {
     </div> 
   </div>`;
 
-  about.style.color = "darkslategray";
-  projects.style.color = "#fff";
-  contact.style.color = "darkslategray";
-};
-
-const contactPage = () => {
-  main.innerHTML = `
+const contactPage = `
   <div id="contactDetails">
     <p><i class="fas fa-globe-europe"></i> Helmond, Noord-Brabant, NL</p>
     <p><i class="far fa-envelope"></i>
@@ -103,9 +105,4 @@ const contactPage = () => {
     <p><i class="fas fa-phone"></i> +31 6 85426290</p>
   </div>`;
 
-  about.style.color = "darkslategray";
-  projects.style.color = "darkslategray";
-  contact.style.color = "#fff";
-};
-
-export { aboutPage, projectsPage, contactPage };
+export { aboutPage, aboutEN, aboutNL, projectsPage, contactPage };
