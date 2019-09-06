@@ -29,26 +29,27 @@ const aboutPage = `
 
 const aboutEN = `
 <div class="aboutContainer" id="aboutText">
-<div id="about1">I love the feeling that anything is possible with software, and am 
+<div>I love the feeling that anything is possible with software, and am 
 happiest when I have a problem to solve.</div>
-<div id="about2">I started to teach myself web development at the end of 2018, looking for a change
+<div>I started to teach myself web development at the end of 2018, looking for a change
 of career. Before that, programming was just a hobby, beginning with the ZX Spectrum in 
 the early 1980s.</div>
-<div id="about3">My university degree is in philosophy, and I find that the precision and logical 
+<div>My university degree is in philosophy, and I find that the precision and logical 
 analysis that philosophy teaches is a good preparation for the process of writing software.</div>
 </div>`;
 
 const aboutNL = `
 <div class="aboutContainer" id="aboutText">
-<div id="about1">Het gevoel dat alles mogelijk is met software vind ik fantastisch, en ik vind het 
-vooral geweldig om problemen op te lossen.</div>
-<div id="about2">Ik ben begonnen met mijn zelfstudie web development aan het einde van 2018, met de 
-bedoeling om daar een een nieuwe carrière in te beginnen. Daarvoor was programmeren 
-alleen een hobby, die begon met de ZX Spectrum in het begin van de jaren '80.</div>
-<div id="about3">Mijn universitaire opleiding is filosofie, en ik vind dat de precisie en logische 
-analyse vanuit de filosofie leer is een goede voorbereiding voor het proces van het 
-schrijven van software.</div>
+<div>​Ik hou ervan dat alles mogelijk is met software, en ik ben op mijn best als ik een 
+probleem moet oplossen.</div>
+<div>Ik ben begonnen met mijn zelfstudie web development aan het einde van 2018, met de 
+bedoeling daarin te kunnen gaan werken. Daarvoor was programmeren gewoon een hobby, die 
+begon met de ZX Spectrum in het begin van de jaren '80.</div>
+<div>Mijn universitaire studie is filosofie, en ik ondervind dat de precisie en logische 
+analyse vanuit de filosofie een goede basis is voor het proces van software ontwikkelen.</div>
 </div>`;
+
+const langSelect = `<div id="select"><span id="ned">NL&ensp;</span><span id="eng">&ensp;EN</span></div>`;
 
 const projectsPage = `
   <div id="projectContainer">
@@ -106,4 +107,4 @@ const contactPage = `
     <p><i class="fas fa-phone"></i> +31 6 85426290</p>
   </div>`;
 
-export { aboutPage, aboutEN, aboutNL, projectsPage, contactPage };
+export { aboutPage, aboutEN, aboutNL, langSelect, projectsPage, contactPage };
