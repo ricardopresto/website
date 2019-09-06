@@ -22,7 +22,9 @@ body {
   background-color: #6360f5;
   align-content: center;
   height: 4em;
-  opacity: 0.8;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
 }
 
 #header div {
@@ -63,6 +65,9 @@ body {
   min-width: 300px;
   height: min-content;
   margin: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 30px #fff;
+  border-radius: 6px;
 }
 
 #projectContainer a {
