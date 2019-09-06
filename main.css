@@ -22,6 +22,7 @@ body {
   background-color: #6360f5;
   align-content: center;
   height: 4em;
+  opacity: 0.8;
 }
 
 #header div {
