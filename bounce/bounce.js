@@ -11,14 +11,16 @@ const c1 = document.getElementById("canvas1"),
   soundBtn = document.getElementById("sound"),
   startbtn = document.getElementById("start"),
   soundIcon = document.getElementById("soundIcon"),
-  homeButton = document.getElementById("homeButton"),
-  surround = document.getElementById("surround");
+  surround = document.getElementById("surround"),
+  speedSlider = document.getElementById("speedSlider");
 
 soundBtn.addEventListener("click", soundBtnClick);
 startbtn.addEventListener("click", startBtnClick);
 window.addEventListener("mousemove", batMove);
 window.addEventListener("touchmove", batTouchMove);
 window.addEventListener("touchstart", batTouchMove);
+speedSlider.addEventListener("change", speedChange);
+//speedSlider.addEventListener("touchmove", speedChange);
 
 ctx.translate(0.5, 0.5);
 
@@ -383,6 +385,12 @@ function soundBtnClick() {
   soundIcon.classList.toggle("fa-volume-mute");
 }
 
+function speedChange() {
+  speed = Number(speedSlider.value);
+  xDir > 0 ? (xDir = speed) : (xDir = -speed);
+  yDir > 0 ? (yDir = speed) : (yDir = -speed);
+}
+
 async function startBtnClick() {
   ctxTop.clearRect(boundary, boundary, c3.width - boundary * 2, c3.height);
   ctx.clearRect(boundary, boundary, c2.width - boundary * 2, c2.height);
@@ -391,7 +399,7 @@ async function startBtnClick() {
   await drawBricks();
   x = Math.random() * 200 + 20;
   y = 300;
-  xDir = speed;
-  yDir = speed;
+  xDir = Math.abs(speed);
+  yDir = Math.abs(speed);
   window.loop = setInterval(gameLoop, 0);
 }

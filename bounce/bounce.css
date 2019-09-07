@@ -23,6 +23,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+#buttons div {
+  color: #fff;
+  margin: 10px;
+  font-family: sans-serif;
 }
 
 button {
@@ -34,6 +41,33 @@ button {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 8px;
+}
+
+#speedSlider {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 10px;
+  background: #000;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+
+#speedSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+#speedSlider::-moz-range-thumb {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  cursor: pointer;
 }
 
 #start {
