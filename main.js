@@ -57,6 +57,8 @@ const aboutPageClick = () => {
     dutch = false;
     aboutPageClick();
   });
+
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
 };
 
 const projectsPageClick = () => {
@@ -71,6 +73,8 @@ const projectsPageClick = () => {
   about.style.color = "darkslategray";
   projects.style.color = "#fff";
   contact.style.color = "darkslategray";
+
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
 };
 
 const contactPageClick = () => {
