@@ -13,10 +13,15 @@ modal.addEventListener("click", hide);
 left.addEventListener("click", leftClick);
 right.addEventListener("click", rightClick);
 document.addEventListener("keydown", keyPress);
+fullpic.addEventListener("touchstart", touchS);
+fullpic.addEventListener("touchmove", touchM);
+fullpic.addEventListener("touchend", touchE);
 
 let currentImage = "";
 thumbs = Array.from(thumbs);
 let fullPicDisplay = false;
+let touchOne,
+  touchTwo = null;
 
 thumbs.forEach(thumb => {
   if (thumb.clientHeight > thumb.clientWidth) {
@@ -126,4 +131,17 @@ function screenOrientation() {
   } else {
     return "landscape";
   }
+}
+
+function touchS(e) {
+  e.preventDefault();
+  touchOne = e.targetTouches[0].clientX;
+}
+
+function touchM(e) {
+  touchTwo = e.targetTouches[0].clientX;
+}
+
+function touchE() {
+  touchOne > touchTwo ? leftClick() : rightClick();
 }
