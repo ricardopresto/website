@@ -101,10 +101,9 @@ const projectsPage = `
 
 const contactPage = `
   <div id="contactDetails">
-    <p><i class="fas fa-globe-europe"></i> Helmond, Noord-Brabant, NL</p>
-    <p><i class="far fa-envelope"></i>
-    <a id="emailLink" href="mailto:richard@ricardopresto.eu"> richard@ricardopresto.eu</a></p>
-    <p><i class="fas fa-phone"></i> +31 6 85426290</p>
+    <p><i class="fas fa-globe-europe"></i>&ensp;Helmond, Noord-Brabant, NL</p>
+    <p><i class="far fa-envelope"></i>&ensp;richard@ricardopresto.eu</p>
+    <p><i class="fas fa-phone"></i>&ensp;+31 6 85426290</p>
   </div>`;
 
 export { aboutPage, aboutEN, aboutNL, langSelect, projectsPage, contactPage };
