@@ -10,7 +10,6 @@ const aboutPage = `
         <li>JavaScript/ES6</li>
         <li>Responsive Design</li>
         <li>Git</li>
-        <li>Webpack/Parcel</li>
         <li>Linux</li>
         <li>GIMP/Photoshop</li>
         </ul>
