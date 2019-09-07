@@ -202,13 +202,13 @@ function drawBall() {
 }
 
 function check(x, y, r) {
-  let leftData = ctx.getImageData(x - (r + 1), y - 2, 1, 4).data;
+  let leftData = ctx.getImageData(x - (r + 2), y - 2, 1, 4).data;
   let left = [];
   for (let n = 0; n < leftData.length; n = n + 4) {
     left.push(leftData.slice(n, n + 3).toString());
     left.push(leftData.slice(n + 3, n + 4).toString());
   }
-  let rightData = ctx.getImageData(x + (r + 1), y - 2, 1, 4).data;
+  let rightData = ctx.getImageData(x + (r + 2), y - 2, 1, 4).data;
   let right = [];
   for (let n = 0; n < rightData.length; n = n + 4) {
     right.push(rightData.slice(n, n + 3).toString());
