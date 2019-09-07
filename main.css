@@ -137,6 +137,10 @@ body {
   margin: 1em;
 }
 
+.aboutContainer div:first-child {
+  margin-top: 0;
+}
+
 .aboutContainer img {
   height: 300px;
   margin-top: 20px;

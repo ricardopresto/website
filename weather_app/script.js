@@ -75,8 +75,8 @@ const getWeatherData = place => {
     })
     .catch(function(error) {
       console.error(error);
-      temp.textContent = "Not found";
-      loc.textContent = "";
+      temp.textContent = "";
+      loc.textContent = "Sorry, not found";
       description.textContent = "";
       output.style.visibility = "visible";
       forecast.style.visibility = "hidden";
@@ -122,8 +122,8 @@ const getWeatherForecast = place => {
     })
     .catch(function(error) {
       console.error(error);
-      temp.textContent = "Not found";
-      loc.textContent = "";
+      temp.textContent = "";
+      loc.textContent = "Sorry, not found";
       description.textContent = "";
       output.style.visibility = "visible";
       forecast.style.visibility = "hidden";
