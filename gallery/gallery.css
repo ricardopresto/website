@@ -15,8 +15,8 @@
 
 .thumb:hover {
   position: relative;
-  transform: scale(1.008, 1.008);
-  box-shadow: 1px 1px 10px grey;
+  transform: scale(1.005, 1.005);
+  box-shadow: 1px 1px 5px grey;
 }
 
 #modal {
