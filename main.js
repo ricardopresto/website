@@ -11,7 +11,6 @@ const main = document.getElementById("main");
 const about = document.getElementById("about");
 const projects = document.getElementById("projects");
 const contact = document.getElementById("contact");
-const select = document.getElementById("select");
 
 let activePage = "projects";
 
