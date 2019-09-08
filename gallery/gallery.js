@@ -115,10 +115,20 @@ function keyPress(event) {
 
 function picSize(pic) {
   if (screenOrientation() == "landscape") {
-    pic.setAttribute("height", document.documentElement.clientHeight - 160);
+    pic.setAttribute("height", document.documentElement.clientHeight - 140);
   } else {
-    pic.setAttribute("width", document.documentElement.clientWidth - 220);
+    pic.setAttribute("width", document.documentElement.clientWidth - 180);
   }
+
+  if (
+    document.documentElement.clientHeight < 400 ||
+    document.documentElement.clientWidth < 400
+  ) {
+    fullpic.style.padding = "10px";
+  } else {
+    fullpic.style.padding = "20px";
+  }
+
   left.setAttribute("height", pic.height + 60);
   right.setAttribute("height", pic.height + 60);
 }
@@ -143,5 +153,5 @@ function touchM(e) {
 }
 
 function touchE() {
-  touchOne > touchTwo ? leftClick() : rightClick();
+  touchOne < touchTwo ? leftClick() : rightClick();
 }
