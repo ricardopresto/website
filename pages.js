@@ -8,6 +8,7 @@ const aboutPage = `
         <li>HTML5</li>
         <li>CSS</li>
         <li>JavaScript/ES6</li>
+        <li>Vue.js</li>
         <li>Responsive Design</li>
         <li>Git</li>
         <li>Linux</li>
@@ -17,8 +18,7 @@ const aboutPage = `
         <div>Currently learning:</div>
         <div>
         <ul>
-        <li>React</li>
-        <li>Vue</li>
+        <li>Node.js</li>
         </ul>
         </div>
       </div>  
@@ -52,6 +52,17 @@ const langSelect = `<div id="select"><span id="ned">NL&ensp;</span><span id="eng
 
 const projectsPage = `
   <div id="projectContainer">
+  <div id="drumApp" class="projectBox">
+    <a href="./drum/index.html" target="_blank" ><img src="./images/drum.jpg" /></a>
+    <div class="description">
+    A drum machine built with Vue.js
+    </div>
+    <div class="linksBox">
+      <a href="./drum/index.html" target="_blank" >Webpage</a>
+      <a href="https://github.com/ricardopresto/drumVue" target="_blank" >
+      <i class="fab fa-github fa-lg"></i> Code</a>
+    </div>
+  </div> 
         <div id="mandelbrotApp" class="projectBox">
       <a href="./mandelbrot/index.html" target="_blank" ><img src="./images/mandelbrot.jpg" /></a>
       <div class="description">
@@ -62,7 +73,7 @@ const projectsPage = `
         <a href="https://github.com/ricardopresto/website/tree/master/mandelbrot" target="_blank" >
         <i class="fab fa-github fa-lg"></i> Code</a>
       </div>
-    </div>
+      </div>
     <div id="weatherApp" class="projectBox">
       <a href="./weather_app/index.html" target="_blank" ><img src="./images/weather.jpg" /></a>
       <div class="description">
@@ -85,17 +96,6 @@ const projectsPage = `
         <i class="fab fa-github fa-lg"></i> Code</a>
       </div>
     </div>
-    <div id="galleryApp" class="projectBox">
-      <a href="./gallery/index.html" target="_blank" ><img src="./images/gallery.jpg" /></a>
-      <div class="description">
-      A simple image gallery
-      </div>
-      <div class="linksBox">
-        <a href="./gallery/index.html" target="_blank" >Webpage</a>
-        <a href="https://github.com/ricardopresto/website/tree/master/gallery" target="_blank" >
-        <i class="fab fa-github fa-lg"></i> Code</a>
-      </div>
-    </div> 
   </div>`;
 
 const contactPage = `
