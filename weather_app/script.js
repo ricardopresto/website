@@ -176,3 +176,5 @@ function keyPress(event) {
     getWeather();
   }
 }
+
+getWeather();
