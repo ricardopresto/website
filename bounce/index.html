@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Breakout</title>
     <script src="https://kit.fontawesome.com/6d9113b59f.js"></script>
     <link href="./bounce.css" rel="stylesheet" />
   </head>
   <body>
     <div id="surround">
-      <div>
-        <div id="container">
-          <canvas id="canvas1" width="600" height="600"></canvas>
-          <canvas id="canvas2" width="600" height="600"></canvas>
-          <canvas id="canvas3" width="600" height="600"></canvas>
-        </div>
+      <div id="container">
+        <canvas id="canvas1" width="600" height="600"></canvas>
+        <canvas id="canvas2" width="600" height="600"></canvas>
+        <canvas id="canvas3" width="600" height="600"></canvas>
       </div>
       <div id="buttons">
         <button id="start"><i class="fas fa-play"></i></button>
@@ -21,6 +18,7 @@
         </button>
         <input type="range" id="speedSlider" min="1" max="6" value="2" />
         <div>-&ensp;Speed&ensp;+</div>
+      </div>
       </div>
     </div>
     <audio id="beep1" src="./sounds/beep1.mp3"></audio>

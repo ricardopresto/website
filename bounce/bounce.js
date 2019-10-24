@@ -11,7 +11,6 @@ const c1 = document.getElementById("canvas1"),
   soundBtn = document.getElementById("sound"),
   startbtn = document.getElementById("start"),
   soundIcon = document.getElementById("soundIcon"),
-  surround = document.getElementById("surround"),
   speedSlider = document.getElementById("speedSlider");
 
 soundBtn.addEventListener("click", soundBtnClick);
@@ -20,7 +19,6 @@ window.addEventListener("mousemove", batMove);
 window.addEventListener("touchmove", batTouchMove);
 window.addEventListener("touchstart", batTouchMove);
 speedSlider.addEventListener("change", speedChange);
-//speedSlider.addEventListener("touchmove", speedChange);
 
 ctx.translate(0.5, 0.5);
 
@@ -38,12 +36,8 @@ const setSize = () => {
 
   if (window.innerWidth < size + 140) {
     buttons.style.flexDirection = "row";
-    container.style.marginTop = "5px";
-    surround.style.flexFlow = "column";
   } else {
     buttons.style.flexDirection = "column";
-    container.style.marginTop = "20px";
-    surround.style.flexFlow = "row";
   }
 };
 
@@ -53,7 +47,7 @@ window.onresize = setSize;
 let x = Math.random() * 200 + 20;
 let y = 300; //ball co-ordinates
 let r = 6; //ball radius
-let speed = 2; //ball speed
+let speed = 3; //ball speed
 let xDir = speed;
 let yDir = speed;
 let rows = 9; //brick rows
@@ -202,13 +196,13 @@ function drawBall() {
 }
 
 function check(x, y, r) {
-  let leftData = ctx.getImageData(x - (r + 2), y - 2, 1, 4).data;
+  let leftData = ctx.getImageData(x - (r + 1), y - 2, 1, 4).data;
   let left = [];
   for (let n = 0; n < leftData.length; n = n + 4) {
     left.push(leftData.slice(n, n + 3).toString());
     left.push(leftData.slice(n + 3, n + 4).toString());
   }
-  let rightData = ctx.getImageData(x + (r + 2), y - 2, 1, 4).data;
+  let rightData = ctx.getImageData(x + (r + 1), y - 2, 1, 4).data;
   let right = [];
   for (let n = 0; n < rightData.length; n = n + 4) {
     right.push(rightData.slice(n, n + 3).toString());
@@ -402,7 +396,7 @@ async function startBtnClick() {
   await drawBricks();
   x = Math.random() * 200 + 20;
   y = 300;
-  xDir = Math.abs(speed);
-  yDir = Math.abs(speed);
+  xDir = speed;
+  yDir = speed;
   requestAnimationFrame(gameLoop);
 }
