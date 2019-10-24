@@ -229,14 +229,17 @@ function check(x, y, r) {
   return { left, right, above, below };
 }
 
-function gameLoop() {
+let loop;
+
+const gameLoop = () => {
+  loop = requestAnimationFrame(gameLoop);
   moveBall();
   drawBat();
   if (y > 650) {
     soundOn ? beepFailPlay() : null;
-    clearInterval(loop);
+    cancelAnimationFrame(loop);
   }
-}
+};
 
 function moveBall() {
   ctxB.beginPath();
@@ -401,5 +404,5 @@ async function startBtnClick() {
   y = 300;
   xDir = Math.abs(speed);
   yDir = Math.abs(speed);
-  window.loop = setInterval(gameLoop, 0);
+  requestAnimationFrame(gameLoop);
 }
