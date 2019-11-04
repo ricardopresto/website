@@ -7,7 +7,6 @@ const c1 = document.getElementById("canvas1"),
 	c3 = document.getElementById("canvas3"),
 	ctxTop = c3.getContext("2d"), //canvas for visible bricks, bat and boundary wall
 	container = document.getElementById("container"),
-	buttons = document.getElementById("buttons"),
 	soundBtn = document.getElementById("sound"),
 	startbtn = document.getElementById("start"),
 	soundIcon = document.getElementById("soundIcon"),
@@ -226,6 +225,7 @@ const gameLoop = () => {
 	if (y > 650) {
 		soundOn ? beepFailPlay() : null;
 		cancelAnimationFrame(loop);
+		startbtn.disabled = false;
 	}
 };
 
@@ -383,6 +383,7 @@ function speedChange() {
 }
 
 async function startBtnClick() {
+	startbtn.disabled = true;
 	ctxTop.clearRect(boundary, boundary, c3.width - boundary * 2, c3.height);
 	ctx.clearRect(boundary, boundary, c2.width - boundary * 2, c2.height);
 	batX = 300;
