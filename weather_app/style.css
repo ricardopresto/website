@@ -3,10 +3,6 @@
   white-space: nowrap;
 }
 
-div {
-  border: 1px solid red;
-}
-
 body:before {
   content: "";
   display: block;
@@ -17,18 +13,20 @@ body:before {
   height: 100%;
   z-index: -10;
   background: url(sky.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
 #input,
 #output,
 #container {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 
@@ -56,6 +54,7 @@ body:before {
   background-color: transparent;
   border: 1px solid darkslategray;
   -webkit-transition: 0.2s;
+  -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
 }
 
@@ -64,8 +63,12 @@ body:before {
 }
 
 #cityInput {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -79,8 +82,12 @@ body:before {
 }
 
 #countryInput {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -102,8 +109,12 @@ label {
 }
 
 #forecast {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
+  -webkit-box-pack: center;
   justify-content: center;
   margin-top: 2rem;
   width: 100%;
@@ -111,8 +122,12 @@ label {
 }
 
 .forecastDay {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-align: center;
   align-items: center;
   border: 1px solid darkslategray;
   padding: 1rem;
@@ -133,7 +148,10 @@ label {
 
 @media screen and (max-width: 700px) {
   #forecast {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center;
   }
 
@@ -143,18 +161,26 @@ label {
 
   .forecastDay {
     margin-top: 1rem;
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
   }
 
   #cityInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
   #countryInput {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
   }
 
   label {
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
   }
 }
