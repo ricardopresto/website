@@ -3,6 +3,10 @@
   white-space: nowrap;
 }
 
+div {
+  border: 1px solid red;
+}
+
 body:before {
   content: "";
   display: block;
@@ -29,11 +33,19 @@ body:before {
 }
 
 #output {
+  min-width: 14em;
+  max-width: 90%;
   border: 1px solid darkslategray;
   padding: 1rem;
   margin: 1rem;
   visibility: hidden;
   box-shadow: 1px 1px 30px white;
+}
+
+#loc {
+  text-align: center;
+  max-width: 90%;
+  white-space: normal;
 }
 
 #search {
@@ -123,6 +135,10 @@ label {
   #forecast {
     flex-direction: column;
     align-items: center;
+  }
+
+  #loc {
+    white-space: normal;
   }
 
   .forecastDay {
